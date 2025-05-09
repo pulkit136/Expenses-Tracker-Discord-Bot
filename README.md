@@ -1,86 +1,81 @@
-💸 Expenses Tracker Discord Bot
+# 💸 Expenses Tracker Discord Bot
+
 A simple Discord bot to help you track your daily expenses seamlessly. Log your expenses directly through Discord messages, and the bot will record them for easy tracking and analysis.
 
-🚀 Features
-Quick Expense Logging: Add expenses by sending messages in the format amount, item or amount, item, place.
+---
 
-Daily Summary: Retrieve a summary of today's expenses.
+## 🚀 Features
 
-Total Expenditure: Get the total amount spent over time.
+- **Quick Expense Logging**: Add expenses by sending messages in the format `amount, item` or `amount, item, place`.
+- **Daily Summary**: Retrieve a summary of today's expenses.
+- **Total Expenditure**: Get the total amount spent over time.
+- **User-Friendly Commands**: Simple commands to interact with the bot.
 
-User-Friendly Commands: Simple commands to interact with the bot.
+---
 
-🛠️ Setup Instructions
-Prerequisites
-Python 3.6 or higher
+## 🛠️ Setup Instructions
 
-A Discord account
+### Prerequisites
 
-A Discord bot token
+- Python 3.6 or higher
+- A Discord account
+- A Discord bot token
 
-Installation
-Clone the Repository
+### Installation
 
-bash
-Copy
-Edit
-git clone https://github.com/pulkit136/Expenses-Tracker-Discord-Bot.git
-cd Expenses-Tracker-Discord-Bot
-Install Dependencies
+1. **Clone the Repository**
 
-Ensure you have pip installed. Then, run:
+   ```bash
+   git clone https://github.com/pulkit136/Expenses-Tracker-Discord-Bot.git
+   cd Expenses-Tracker-Discord-Bot
+   
+2. **Install Dependencies**
+   `pip install -r requirements.txt`
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Configure Environment Variables
+3. Set Up Environment Variables
+   Create a .env file in the root directory and add the following:
+   `DISCORD_TOKEN=your_discord_bot_token_here`
+   
+5. Run the Bot
+   `python bot.py`
 
-Create a .env file in the root directory and add your Discord bot token:
 
-env
-Copy
-Edit
-DISCORD_TOKEN=your_discord_bot_token_here
-Run the Bot
-
-bash
-Copy
-Edit
-python bot.py
-📖 Usage
+## 📖 Usage
 Once the bot is running and added to your Discord server:
 
-Log an Expense
+### Logging an Expense
+Send a message to the bot in either of the following formats:
 
-Send a direct message to the bot in the following format:
+`amount, item`
+`amount, item, place`
 
-Copy
-Edit
-amount, item
-or
+### Examples 
+`150, Lunch`
+`45, Samosa, Bikaner`
 
-Copy
-Edit
-amount, item, place
-Example:
+### Commands
+`!total` — Displays the total expenses recorded.
 
-Copy
-Edit
-150, Lunch
-45, Samosa, Bikaner
-Commands
+`!today` — Shows today's expenses.
 
-!total: Displays the total expenses recorded.
+`!help` — Lists available commands and usage instructions.
 
-!today: Shows today's expenses.
+## File structure 
+Expenses-Tracker-Discord-Bot/
+│
+├── bot.py               # Main bot script
+├── requirements.txt     # Dependencies
+└── .env                 # (To be created) Environment file for your bot token
 
-!help: Provides information on how to use the bot.
+## 🤝 Contributing
+Contributions are welcome! If you find a bug or want to add a feature:
 
-📁 File Structure
-bot.py: Main bot script containing the logic for handling messages and commands.
+- Fork the repo
 
-requirements.txt: Lists the Python dependencies required to run the bot.
+- Create a new branch (git checkout -b feature-xyz)
 
-🤝 Contributing
-Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
+- Commit your changes (git commit -m 'Add feature xyz')
+
+- Push to the branch (git push origin feature-xyz)
+
+- Open a pull request
